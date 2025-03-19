@@ -5,7 +5,7 @@ import streamlit as st
 
 
 
-model=joblib.load("/home/teddy/Music/Java/dataset1/xgb_regression_best_params.pkl")
+model=joblib.load("xgb_regression_best_params.pkl")
 
 
 st.title("House Price Prediction")
