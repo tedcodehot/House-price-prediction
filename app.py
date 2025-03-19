@@ -1,9 +1,15 @@
 import joblib
 import streamlit as st
+import snowflake.connector
 
 
 
 
+conn = snowflake.connector.connect(
+    user="Teddy Salas",
+    password="Alliswell@1111",
+    account="ZPFYXBE-TC33496"
+)
 
 model=joblib.load("xgb_regression_best_params.pkl")
 
