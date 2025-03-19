@@ -6,7 +6,7 @@ import snowflake.connector
 
 
 conn = snowflake.connector.connect(
-    user="Teddy Salas",
+    user="Teddy",
     password="Alliswell@1111",
     account="ZPFYXBE-TC33496"
 )
