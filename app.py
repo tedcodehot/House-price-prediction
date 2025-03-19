@@ -6,9 +6,9 @@ import snowflake.connector
 
 
 conn = snowflake.connector.connect(
-    user="Teddy",
-    password="Alliswell@1111",
-    account="ZPFYXBE-TC33496"
+    user=st.secrets["snowflake"]["Teddy Salas"],
+    password=st.secrets["snowflake"]["Alliswell@1111"],
+    account=st.secrets["snowflake"]["ZPFYXBE-TC33496"]
 )
 
 model=joblib.load("xgb_regression_best_params.pkl")
